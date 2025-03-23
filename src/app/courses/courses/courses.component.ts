@@ -12,10 +12,10 @@ import { CoursesService } from '../services/courses.service';
 export class CoursesComponent implements OnInit {
 
   displayedColumns = ['name', 'category'];
-  courses: Observable<Course[]>;
+  courses$: Observable<Course[]>;
 
   constructor(private coursesService: CoursesService) {
-    this.courses = this.coursesService.list();
+    this.courses$ = this.coursesService.list();
   }
 
   ngOnInit(): void {
