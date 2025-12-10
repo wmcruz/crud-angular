@@ -8,12 +8,14 @@ import { CoursesComponent } from './containers/courses/courses.component';
 import { CourseFormComponent } from './../courses/containers/course-form/course-form.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { CourseListComponent } from './components/course-list/course-list.component';
+import { ConfirmationDialogComponent } from './components/confirmation-dialog/confirmation-dialog.component';
 
 @NgModule({
   declarations: [
     CoursesComponent,
     CourseFormComponent,
-    CourseListComponent
+    CourseListComponent,
+    ConfirmationDialogComponent
   ],
   imports: [
     CommonModule,
