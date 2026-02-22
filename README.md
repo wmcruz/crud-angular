@@ -27,26 +27,6 @@ This is a demonstration project on how to create a CRUD application in Angular.
 - ✅ Presentational x Smart Components
 - 🚧 Unit and Integration tests for components, services, pipes, guards
 
-## Screenshots
-
-Main Page with Pagination
-
-<p align="center">
-  <img src="./docs/main.jpeg" alt="Main Page" width="100%">
-</p>
-
-Form with One to Many (Course-Lessons)
-
-<p align="center">
-  <img src="./docs/form.jpeg" alt="Form Page" width="100%">
-</p>
-
-View Page with YouTube Player
-
-<p align="center">
-  <img src="./docs/view.jpeg" alt="View Page" width="100%">
-</p>
-
 ## ❗️Executing the code locally
 
 ### Executing the back-end
