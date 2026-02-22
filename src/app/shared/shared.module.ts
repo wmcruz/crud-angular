@@ -7,17 +7,15 @@ import { ErrorDialogComponent } from './components/error-dialog/error-dialog.com
 import { CategoryPipe } from './pipes/category.pipe';
 
 @NgModule({
-  declarations: [
-    ErrorDialogComponent,
-    CategoryPipe
-  ],
-  imports: [
-    CommonModule,
-    AppMaterialModule
-  ],
-  exports: [
-    ErrorDialogComponent,
-    CategoryPipe
-  ]
+    imports: [
+        CommonModule,
+        AppMaterialModule,
+        ErrorDialogComponent,
+        CategoryPipe
+    ],
+    exports: [
+        ErrorDialogComponent,
+        CategoryPipe
+    ]
 })
 export class SharedModule { }

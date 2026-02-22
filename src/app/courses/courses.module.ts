@@ -11,18 +11,16 @@ import { CourseListComponent } from './components/course-list/course-list.compon
 import { ConfirmationDialogComponent } from './components/confirmation-dialog/confirmation-dialog.component';
 
 @NgModule({
-  declarations: [
-    CoursesComponent,
-    CourseFormComponent,
-    CourseListComponent,
-    ConfirmationDialogComponent
-  ],
-  imports: [
-    CommonModule,
-    CoursesRoutingModule,
-    AppMaterialModule,
-    SharedModule,
-    ReactiveFormsModule
-  ]
+    imports: [
+        CommonModule,
+        CoursesRoutingModule,
+        AppMaterialModule,
+        SharedModule,
+        ReactiveFormsModule,
+        CoursesComponent,
+        CourseFormComponent,
+        CourseListComponent,
+        ConfirmationDialogComponent
+    ]
 })
 export class CoursesModule { }
