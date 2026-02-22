@@ -1,27 +1,88 @@
-# CrudAngular
+# REST API with Spring Boot and Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.18.
+![Build](https://github.com/loiane/crud-angular/actions/workflows/node.js.yml/badge.svg?branch=master)
 
-## Development server
+CRUD Angular + Spring course teacher Loiane. [Repo](https://github.com/loiane/crud-angular-spring/)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+This is a demonstration project on how to create a CRUD application in Angular.
 
-## Code scaffolding
+## 💻 Tecnologies
+- Angular v17
+- Angular Material
+- Node 18.20.8
+- Karma + Jasmine (front-end tests)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## ⌨️ Editor / IDE
+- [IntelliJ](https://www.jetbrains.com/idea/download)
+- [VsCode](https://code.visualstudio.com/download)
 
-## Build
+## Some functionalities available in the front end
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- ✅ Angular Standalone components (Angular v16+)
+- ✅ Angular Material components
+- ✅ List of all courses with pagination
+- ✅ Form to update/create courses with lessons (has-many - FormArray)
+- ✅ View only screen
+- ✅ TypedForms (Angular v14+)
+- ✅ Presentational x Smart Components
+- 🚧 Unit and Integration tests for components, services, pipes, guards
 
-## Running unit tests
+## Screenshots
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Main Page with Pagination
 
-## Running end-to-end tests
+<p align="center">
+  <img src="./docs/main.jpeg" alt="Main Page" width="100%">
+</p>
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Form with One to Many (Course-Lessons)
 
-## Further help
+<p align="center">
+  <img src="./docs/form.jpeg" alt="Form Page" width="100%">
+</p>
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+View Page with YouTube Player
+
+<p align="center">
+  <img src="./docs/view.jpeg" alt="View Page" width="100%">
+</p>
+
+## ❗️Executing the code locally
+
+### Executing the back-end
+
+You need to have Java and Maven installed and configured locally.
+
+Open the project [crud-spring](https://github.com/wmcruz/crud-spring) project in your favorite IDE as a Maven project and execute it as Spring Boot application.
+
+### Executing the front-end
+
+You need to have Node.js 18.20.8 / NPM installed locally.
+
+1. Install all the required dependencies:
+
+```
+npm install
+```
+
+2. Execute the project:
+
+```
+npm run start
+```
+
+This command will run the Angular project with a proxy to the Java server, without requiring CORS.
+
+Open your browser and access **http://localhost:4200** (Angular default port).
+
+#### Upgrading Angular
+
+```
+ng update
+```
+
+Then
+
+```
+ng update @angular/cli @angular/core @angular/cdk @angular/material @angular/youtube-player --force
+```
